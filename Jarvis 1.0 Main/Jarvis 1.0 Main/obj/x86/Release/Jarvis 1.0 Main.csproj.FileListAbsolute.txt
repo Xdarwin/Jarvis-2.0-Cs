@@ -1,0 +1,15 @@
+C:\Users\Guillaume\AppData\Local\Temporary Projects\Jarvis 1.0 Main\bin\Release\Jarvis 1.0 Main.exe
+C:\Users\Guillaume\AppData\Local\Temporary Projects\Jarvis 1.0 Main\bin\Release\Jarvis 1.0 Main.pdb
+C:\Users\Guillaume\AppData\Local\Temporary Projects\Jarvis 1.0 Main\obj\x86\Release\Jarvis_1._0_Main.Form1.resources
+C:\Users\Guillaume\AppData\Local\Temporary Projects\Jarvis 1.0 Main\obj\x86\Release\Jarvis_1._0_Main.Properties.Resources.resources
+C:\Users\Guillaume\AppData\Local\Temporary Projects\Jarvis 1.0 Main\obj\x86\Release\Jarvis 1.0 Main.csproj.GenerateResource.Cache
+C:\Users\Guillaume\AppData\Local\Temporary Projects\Jarvis 1.0 Main\obj\x86\Release\Jarvis 1.0 Main.exe
+C:\Users\Guillaume\AppData\Local\Temporary Projects\Jarvis 1.0 Main\obj\x86\Release\Jarvis 1.0 Main.pdb
+C:\Jarvis 1.0 Main\Jarvis 1.0 Main\bin\Release\Jarvis 1.0 Main.exe
+C:\Jarvis 1.0 Main\Jarvis 1.0 Main\bin\Release\Jarvis 1.0 Main.pdb
+C:\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Release\Jarvis_1._0_Main.Form1.resources
+C:\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Release\Jarvis_1._0_Main.Properties.Resources.resources
+C:\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Release\Jarvis 1.0 Main.csproj.GenerateResource.Cache
+C:\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Release\Jarvis 1.0 Main.exe
+C:\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Release\Jarvis 1.0 Main.pdb
+C:\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Release\Jarvis 1.0 Main.csprojResolveAssemblyReference.cache

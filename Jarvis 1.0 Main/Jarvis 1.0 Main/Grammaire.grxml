@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" tag-format="semantics-ms/1.0"
+root="mouskie" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="mouskie" scope="public">
+    <ruleref special="GARBAGE" />
+    <one-of>
+      <item>
+        <one-of>
+          <item>Met de la musique</item>
+          <item>Musique s il te plait</item>
+        </one-of>
+        <tag>$.mouskie={}; $.mouskie._value="MUSIC";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>Qui a raison ici</item>
+          <item>C'est qui le plus intelligent dans cette pièce</item>
+          <item>C'est qui le plus beau dans cette pièce</item>
+          <item>C'est qui qui impose son swag</item>
+        </one-of>
+        <tag>$.mouskie={}; $.mouskie._value="YOU SIR";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>Merci Jarvis</item>
+          <item>Merci beaucoup Jarvis</item>
+          <item>Merci de ta gentillesse Jarvis</item>
+        </one-of>
+        <tag>$.mouskie={}; $.mouskie._value="MERCI";</tag>
+      </item>
+      <item>
+        Rappelle moi qui sont tes créateurs
+        <tag>$.mouskie={}; $.mouskie._value="PAPAS";</tag>
+      </item>
+      <item>
+        Initialise l'interface de contrôle de l'armure mark 3
+        <tag>$.mouskie={}; $.mouskie._value="MK3";</tag>
+      </item>
+      <item>
+        Donne moi la date
+        <tag>$.mouskie={}; $.mouskie._value="DATE";</tag>
+      </item>
+      <item>
+        Quelle heure est-il
+        <tag>$.mouskie={}; $.mouskie._value="HEURE";</tag>
+      </item>
+      <item>
+        Quitte le module de reconnaissance vocale
+        <tag>$.mouskie={}; $.mouskie._value="QUIT RECO";</tag>
+      </item>
+      <item>
+        Réinitialise l'interface vocale
+        <tag>$.mouskie={}; $.mouskie._value="START RECO";</tag>
+      </item>
+      <item>
+        Bonjour Jarvis
+        <tag>$.mouskie={}; $.mouskie._value="Bonjour";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>Deconnexion</item>
+          <item>Deconnecte toi</item>
+        </one-of>
+        <tag>$.mouskie={}; $.mouskie._value="QUIT";</tag>
+      </item>
+      <item>
+        Jarvis
+        <tag>$.mouskie={}; $.mouskie._value="YES";</tag>
+      </item>
+      <item>
+        Arrete la musique
+        <tag>$.mouskie={}; $.mouskie._value="MUSIC STOP";</tag>
+      </item>
+    </one-of>
+    <ruleref special="GARBAGE" />
+  </rule>
+</grammar>

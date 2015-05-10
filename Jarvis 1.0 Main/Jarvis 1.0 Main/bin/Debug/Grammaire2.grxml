@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" tag-format="semantics-ms/1.0"
+root="mk3" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="mk3" scope="public">
+    <ruleref special="GARBAGE" />
+    <one-of>
+      <item>
+        <one-of>
+          <item>Met de la musique</item>
+          <item>Musique s il te plait</item>
+        </one-of>
+        <tag>$.mk3={}; $.mk3._value="MUSIC";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>Tu peux pas éclairer la pièce</item>
+          <item>Allume le casque</item>
+          <item>Allume la lumière</item>
+          <item>Allume les yeux</item>
+        </one-of>
+        <tag>$.mk3={}; $.mk3._value="LIGHT UP";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>Prépare la tenue de soirée, on est de sortie ce soir</item>
+          <item>Charge moi le plan de vol</item>
+          <item>Initialise tout les systèmes de la mark 3</item>
+        </one-of>
+        <tag>$.mk3={}; $.mk3._value="INI";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>Extinction des feux Jarvis, la fête est finie</item>
+          <item>Eteins les phares</item>
+          <item>Eteins la lumière</item>
+          <item>Eteins les yeux</item>
+        </one-of>
+        <tag>$.mk3={}; $.mk3._value="LIGHT DOWN";</tag>
+      </item>
+      <item>
+        Ouvre la visière
+        <tag>$.mk3={}; $.mk3._value="VIS UP";</tag>
+      </item>
+      <item>
+        Baisse la visière
+        <tag>$.mk3={}; $.mk3._value="VIS DOWN";</tag>
+      </item>
+      <item>
+        Coupe les systèmes de la mark 3
+        <tag>$.mk3={}; $.mk3._value="MK3 BREAK";</tag>
+      </item>
+      <item>
+        Quitte le module de reconnaissance vocale
+        <tag>$.mk3={}; $.mk3._value="QUIT RECO";</tag>
+      </item>
+      <item>
+        Réinitialise l'interface vocale
+        <tag>$.mk3={}; $.mk3._value="START RECO";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>Deconnexion</item>
+          <item>Deconnecte toi</item>
+        </one-of>
+        <tag>$.mk3={}; $.mk3._value="QUIT";</tag>
+      </item>
+      <item>
+        Jarvis
+        <tag>$.mk3={}; $.mk3._value="YES";</tag>
+      </item>
+      <item>
+        Arrete la musique
+        <tag>$.mk3={}; $.mk3._value="MUSIC STOP";</tag>
+      </item>
+    </one-of>
+    <ruleref special="GARBAGE" />
+  </rule>
+</grammar>
