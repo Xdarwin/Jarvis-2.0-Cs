@@ -16,22 +16,29 @@ namespace Jarvis_1._0_Main
         public Form1()
         {
             InitializeComponent();
+            //this.WindowState = FormWindowState.Minimized;
+            //this.ShowInTaskbar = false;
             ASR = new ASR(ref this.recoText, ref this.affiche);
-            this.KeyPress += ActivateASR;
-        }
-
-
-        private void ActivateASR(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Space)
+            //////////////////this.KeyPress += ActivateASR;
+            try
             {
-                try
-                {
-                    ASR.ASREngine.RecognizeAsync(RecognizeMode.Multiple);
-                }
-                catch { }
+                ASR.ASREngine.RecognizeAsync(RecognizeMode.Multiple);
             }
+            catch { }
         }
+
+
+        ////////////////////////////////private void ActivateASR(object sender, KeyPressEventArgs e)
+        ////////////////////////////////{
+        ////////////////////////////////    if (e.KeyChar == (char)Keys.Space)
+        ////////////////////////////////    {
+        ////////////////////////////////        try
+        ////////////////////////////////        {
+        ////////////////////////////////            ASR.ASREngine.RecognizeAsync(RecognizeMode.Multiple);
+        ////////////////////////////////        }
+        ////////////////////////////////        catch { }
+        ////////////////////////////////    }
+        ////////////////////////////////}
 
         private void Form1_Load(object sender, EventArgs e)
         {
