@@ -21,7 +21,6 @@ namespace Jarvis_1._0_Main
         public SpeechRecognitionEngine ASREngine;
         private Label recoText;
         private Label affiche;
-        SerialPort COM1 = new SerialPort("COM1");
         private GrammarBuilder gram_build;
         Choices choice;
         Grammar gram;
@@ -387,6 +386,22 @@ namespace Jarvis_1._0_Main
             }
 
             return Ordre;
+        }
+
+        public void COMWrite(string msg, int SerialPort)
+        {
+            string Serial = "COM" + SerialPort.ToString();
+            try
+            {
+                SerialPort COM = new SerialPort(Serial);
+                COM.Open();
+                COM.Write(msg);
+                COM.Close();
+            }
+            catch
+            {
+                synthese.Speak("Le périphérique recherché est hors de portée Monsieur");
+            }
         }
 
         public void KillProcess(string process)
