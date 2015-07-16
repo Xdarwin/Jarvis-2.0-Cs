@@ -21,6 +21,7 @@ namespace Jarvis_1._0_Main
         public SpeechRecognitionEngine ASREngine;
         private Label recoText;
         private Label affiche;
+        SerialPort COM1 = new SerialPort("COM1");
         private GrammarBuilder gram_build;
         Choices choice;
         Grammar gram;
@@ -158,16 +159,20 @@ namespace Jarvis_1._0_Main
 
         private void ASREngine_SpeechHypothesized(object sender, SpeechHypothesizedEventArgs e)
         {
-            SpeechSynthesizer synthese = new SpeechSynthesizer();
-            synthese.SetOutputToDefaultAudioDevice();
+            //SpeechSynthesizer synthese = new SpeechSynthesizer();
+            //synthese.SetOutputToDefaultAudioDevice();
             recoText.Text = "Hypothèse : " + e.Result.Text;
             affiche.Text = "";
             string hypothese = e.Result.Text;
-            string Ordre = ProcessReco(hypothese);
-            affiche.Text = Ordre;
-            if (Ordre.Contains("bonjour")) {hypothese = ""; synthese.Speak("Bonjour Monsieur"); }
-            if (Ordre.Contains("musique") && Ordre.Contains("demarrer")) { hypothese = ""; Process.Start("c:\\Eiffel65.mp3"); }
-            if (Ordre.Contains("musique") && Ordre.Contains("arreter")) { hypothese = ""; KillProcess("vlc"); }
+            string ordre = ProcessReco(hypothese);
+            affiche.Text = ordre;
+            
+            if (ordre.Contains("bonjour")) 
+                hypothese = ""; //synthese.Speak("Bonjour Monsieur"); 
+            if (ordre.Contains("musique") && ordre.Contains("demarrer")) 
+                hypothese = ""; Process.Start("F:\\Musique\\VidtoMP3\\VIRAL SONG.mp3"); 
+            if (ordre.Contains("musique") && ordre.Contains("arreter"))
+                hypothese = ""; KillProcess("vlc");
         }
 
         private void ASREngine_SpeechRecognitionRejected(object sender, SpeechRecognitionRejectedEventArgs e)
@@ -370,7 +375,7 @@ namespace Jarvis_1._0_Main
             return Ordre;
         }
 
-        public string VerifCoresspondace(string Reco, List<string> choix, string retour, string Ordre)
+        public string VerifCoresspondace(string Reco, List<string> choix, string retour, string ordre)
         {
             bool verif = false;
             for (int i = 0; i < choix.Count; i++)
@@ -382,26 +387,10 @@ namespace Jarvis_1._0_Main
             }
             if (verif == true)
             {
-                Ordre = Ordre + " " + retour;
+                ordre = ordre + " " + retour;
             }
 
-            return Ordre;
-        }
-
-        public void COMWrite(string msg, int SerialPort)
-        {
-            string Serial = "COM" + SerialPort.ToString();
-            try
-            {
-                SerialPort COM = new SerialPort(Serial);
-                COM.Open();
-                COM.Write(msg);
-                COM.Close();
-            }
-            catch
-            {
-                synthese.Speak("Le périphérique recherché est hors de portée Monsieur");
-            }
+            return ordre;
         }
 
         public void KillProcess(string process)

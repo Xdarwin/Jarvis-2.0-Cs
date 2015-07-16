@@ -29,3 +29,11 @@ C:\Users\Romain3\Documents\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86
 C:\Users\Romain3\Documents\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Debug\Jarvis_1._0_Main.Form1.resources
 C:\Users\Romain3\Documents\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Debug\Jarvis_1._0_Main.Properties.Resources.resources
 C:\Users\Romain3\Documents\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Debug\Jarvis 1.0 Main.csproj.GenerateResource.Cache
+C:\Users\Guillaume\Documents\0. Jarvis\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Debug\Jarvis 1.0 Main.exe
+C:\Users\Guillaume\Documents\0. Jarvis\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Debug\Jarvis 1.0 Main.pdb
+C:\Users\Guillaume\Documents\0. Jarvis\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\bin\Debug\Jarvis 1.0 Main.exe
+C:\Users\Guillaume\Documents\0. Jarvis\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\bin\Debug\Jarvis 1.0 Main.pdb
+C:\Users\Guillaume\Documents\0. Jarvis\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Debug\Jarvis 1.0 Main.csprojResolveAssemblyReference.cache
+C:\Users\Guillaume\Documents\0. Jarvis\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Debug\Jarvis_1._0_Main.Form1.resources
+C:\Users\Guillaume\Documents\0. Jarvis\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Debug\Jarvis_1._0_Main.Properties.Resources.resources
+C:\Users\Guillaume\Documents\0. Jarvis\Jarvis-2.0-Cs\Jarvis 1.0 Main\Jarvis 1.0 Main\obj\x86\Debug\Jarvis 1.0 Main.csproj.GenerateResource.Cache
